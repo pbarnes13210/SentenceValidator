@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 public class StringUtils {
     private static final Logger LOGGER = LogManager.getLogger(StringUtils.class.getName());
+
     public static char[] convertSentenceToCharArray(String sentence){
         if(sentence == null || sentence.isEmpty() ){
             LOGGER.warn("User has entered empty sentence");
@@ -18,3 +19,4 @@ public class StringUtils {
         }
     }
 }
+
