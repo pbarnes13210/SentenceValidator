@@ -1,0 +1,37 @@
+2022-10-10 21:45:36,160 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence does not end with a termination character ( .,?,! ), errorValue= o
+2022-10-10 22:03:47,484 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence contains invalid numbers, errorValue= One lazy dog is too few, 12 is too many.
+2022-10-10 22:10:05,831 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence contains invalid numbers, errorValue= Are there 11, 12, or 13 lazy dogs?
+2022-10-10 22:11:19,999 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence contains invalid numbers, errorValue= Are there 11, 12, or 13 lazy dogs?
+2022-10-10 22:11:43,826 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence contains invalid numbers, errorValue= Are there 11, 12, or 13 lazy dogs?
+2022-10-10 22:19:37,743 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence contains invalid numbers, errorValue= Are there 11, 12, or 13 lazy dogs?
+2022-10-10 22:40:50,253 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence contains invalid numbers, errorValue= Are there 11, 12, or 13 lazy dogs?
+2022-10-10 22:44:50,316 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence does not end with a termination character ( .,?,! ), errorValue=  
+2022-10-10 22:44:50,395 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence has period characters other than last position , errorValue= This sentence is used to test if it has a period character. other than last character
+2022-10-10 22:44:50,415 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Starting letter is not a capital letter , errorValue= "
+2022-10-10 22:44:50,415 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence does not end with a termination character ( .,?,! ), errorValue= "
+2022-10-10 22:44:50,416 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence has period characters other than last position , errorValue= "The quick brown fox said “hello Mr lazy dog."
+2022-10-10 22:44:50,438 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence has odd number of quotation marks, errorValue= This sentence is used to test if number of quotation marks "quotation marks" is odd "
+2022-10-10 22:44:50,446 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence does not end with a termination character ( .,?,! ), errorValue= e
+2022-10-10 22:44:50,461 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence has period characters other than last position , errorValue= The quick brown fox said "hello Mr. lazy dog".
+2022-10-10 22:44:50,495 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Starting letter is not a capital letter , errorValue= t
+2022-10-10 22:44:50,496 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence has odd number of quotation marks, errorValue= the quick brown fox said “hello Mr lazy dog".
+2022-10-10 22:44:50,513 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence contains invalid numbers, errorValue= Are there 11, 12, or 13 lazy dogs?
+2022-10-10 22:44:50,562 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence does not end with a termination character ( .,?,! ), errorValue= y
+2022-10-10 22:44:50,563 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence contains invalid numbers, errorValue= One lazy dog is too few, 12 is too many
+2022-10-10 22:44:50,588 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence contains invalid numbers, errorValue= This sentence is used to test if it has integer numbers below 13 such as 1,2,3 and 4
+2022-10-10 22:44:50,597 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Starting letter is not a capital letter , errorValue= t
+2022-10-10 22:45:38,244 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence does not end with a termination character ( .,?,! ), errorValue=  
+2022-10-10 22:45:38,316 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence has period characters other than last position , errorValue= This sentence is used to test if it has a period character. other than last character
+2022-10-10 22:45:38,325 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Starting letter is not a capital letter , errorValue= "
+2022-10-10 22:45:38,326 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence does not end with a termination character ( .,?,! ), errorValue= "
+2022-10-10 22:45:38,326 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence has period characters other than last position , errorValue= "The quick brown fox said “hello Mr lazy dog."
+2022-10-10 22:45:38,348 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence has odd number of quotation marks, errorValue= This sentence is used to test if number of quotation marks "quotation marks" is odd "
+2022-10-10 22:45:38,357 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence does not end with a termination character ( .,?,! ), errorValue= e
+2022-10-10 22:45:38,373 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence has period characters other than last position , errorValue= The quick brown fox said "hello Mr. lazy dog".
+2022-10-10 22:45:38,400 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Starting letter is not a capital letter , errorValue= t
+2022-10-10 22:45:38,400 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence has odd number of quotation marks, errorValue= the quick brown fox said “hello Mr lazy dog".
+2022-10-10 22:45:38,431 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence contains invalid numbers, errorValue= Are there 11, 12, or 13 lazy dogs?
+2022-10-10 22:45:38,486 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence does not end with a termination character ( .,?,! ), errorValue= y
+2022-10-10 22:45:38,487 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence contains invalid numbers, errorValue= One lazy dog is too few, 12 is too many
+2022-10-10 22:45:38,520 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Sentence contains invalid numbers, errorValue= This sentence is used to test if it has integer numbers below 13 such as 1,2,3 and 4
+2022-10-10 22:45:38,532 ERROR o.s.v.SentenceValidator [main] SentenceValidationError, message= Starting letter is not a capital letter , errorValue= t
