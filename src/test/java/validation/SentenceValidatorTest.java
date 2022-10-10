@@ -16,7 +16,7 @@ public class SentenceValidatorTest {
     @BeforeEach
     void setup(){
         sentenceValidator= new SentenceValidator();
-        sentenceManager = new SentenceManager();
+        sentenceManager = new SentenceManager(new SentenceValidator());
     }
 
     @Test

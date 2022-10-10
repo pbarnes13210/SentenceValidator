@@ -9,21 +9,23 @@ import org.sentence.validation.SentenceValidator;
 
 public class SentenceManager implements ISentenceManager {
     private static final Logger LOGGER = LogManager.getLogger(SentenceManager.class.getName());
-    private SentenceValidator sentenceValidator;
+    private final SentenceValidator sentenceValidator;
     private Scanner scan;
     private boolean sentenceStartsWithCapitalLetter;
     private boolean sentenceValidQuotationMarks;
     private boolean sentenceEndsWithValidTerminationCharacters;
     private boolean sentenceHasValidPeriodCharacterPositions;
     private boolean sentenceHasValidNumbers;
-    public SentenceManager(){
+
+
+    public SentenceManager(SentenceValidator sentenceValidator){
+        this.sentenceValidator = sentenceValidator;
         initialise();
     }
 
     @Override
     public void initialise() {
         this.scan = new Scanner(System.in);
-        this.sentenceValidator = new SentenceValidator();
     }
 
     @Override
@@ -69,7 +71,7 @@ public class SentenceManager implements ISentenceManager {
 
     public static void main(String[] args) {
         LOGGER.warn("Application has started");
-        SentenceManager inputManager = new SentenceManager();
+        SentenceManager inputManager = new SentenceManager(new SentenceValidator());
         inputManager.receiveSentence();
     }
 }
