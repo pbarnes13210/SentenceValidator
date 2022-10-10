@@ -12,7 +12,6 @@ public class FileUtils {
     private static final Logger LOGGER = LogManager.getLogger(FileUtils.class.getName());
 
     public static void findPropertiesFile(Properties properties) {
-
         try(InputStream input = new FileInputStream(Constants.PROPERTIES_FILE_LOCATION)){
             properties.load(input);
             LOGGER.warn("Properties file found, loading config");
