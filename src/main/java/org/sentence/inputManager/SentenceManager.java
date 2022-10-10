@@ -17,7 +17,6 @@ public class SentenceManager implements ISentenceManager {
     private boolean sentenceHasValidPeriodCharacterPositions;
     private boolean sentenceHasValidNumbers;
 
-
     public SentenceManager(SentenceValidator sentenceValidator){
         this.sentenceValidator = sentenceValidator;
         initialise();
