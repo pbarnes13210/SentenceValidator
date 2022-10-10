@@ -1,5 +1,6 @@
 package validation;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.sentence.inputManager.SentenceManager;
 import org.sentence.validation.SentenceValidator;
 import org.junit.jupiter.api.BeforeEach;
@@ -15,6 +16,7 @@ public class SentenceValidatorTest {
     @BeforeEach
     void setup(){
         sentenceValidator= new SentenceValidator();
+        sentenceManager = new SentenceManager();
     }
 
     @Test
@@ -128,7 +130,6 @@ public class SentenceValidatorTest {
 
     @Test
     void validate_ValidExampleOneFromQuestion_ShouldReturnTrue(){
-        sentenceManager = new SentenceManager();
         String validExampleFromQuestion = "The quick brown fox said “hello Mr lazy dog”.";
         char[] sentence = convertStringSentenceToCharArray(validExampleFromQuestion);
         assertTrue(sentenceManager.validateSentence(sentence,validExampleFromQuestion));
@@ -136,7 +137,6 @@ public class SentenceValidatorTest {
 
     @Test
     void validate_ValidExampleTwoFromQuestion_ShouldReturnTrue(){
-        sentenceManager = new SentenceManager();
         String validExampleFromQuestion = "The quick brown fox said hello Mr lazy dog.";
         char[] sentence = convertStringSentenceToCharArray(validExampleFromQuestion);
         assertTrue(sentenceManager.validateSentence(sentence,validExampleFromQuestion));
@@ -144,7 +144,6 @@ public class SentenceValidatorTest {
 
     @Test
     void validate_ValidExampleThreeFromQuestion_ShouldReturnTrue(){
-        sentenceManager = new SentenceManager();
         String validExampleFromQuestion = "One lazy dog is too few, 13 is too many.";
         char[] sentence = convertStringSentenceToCharArray(validExampleFromQuestion);
         assertTrue(sentenceManager.validateSentence(sentence,validExampleFromQuestion));
@@ -152,7 +151,6 @@ public class SentenceValidatorTest {
 
     @Test
     void validate_ValidExampleFourThreeFromQuestion_ShouldReturnTrue(){
-        sentenceManager = new SentenceManager();
         String validExampleFromQuestion = "One lazy dog is too few, thirteen is too many.";
         char[] sentence = convertStringSentenceToCharArray(validExampleFromQuestion);
         assertTrue(sentenceManager.validateSentence(sentence,validExampleFromQuestion));
@@ -160,7 +158,6 @@ public class SentenceValidatorTest {
 
     @Test
     void validate_ValidExampleFiveThreeFromQuestion_ShouldReturnTrue(){
-        sentenceManager = new SentenceManager();
         String validExampleFromQuestion = "How many \"lazy dogs\" are there?";
         char[] sentence = convertStringSentenceToCharArray(validExampleFromQuestion);
         assertTrue(sentenceManager.validateSentence(sentence,validExampleFromQuestion));
@@ -168,7 +165,6 @@ public class SentenceValidatorTest {
 
     @Test
     void validate_InvalidExampleOneFromQuestion_ShouldReturnFalse(){
-        sentenceManager = new SentenceManager();
         String validExampleFromQuestion = "The quick brown fox said \"hello Mr. lazy dog\".";
         char[] sentence = convertStringSentenceToCharArray(validExampleFromQuestion);
         assertFalse(sentenceManager.validateSentence(sentence,validExampleFromQuestion));
@@ -176,7 +172,6 @@ public class SentenceValidatorTest {
 
     @Test
     void validate_InvalidExampleTwoFromQuestion_ShouldReturnFalse(){
-        sentenceManager = new SentenceManager();
         String validExampleFromQuestion = "the quick brown fox said “hello Mr lazy dog\".";
         char[] sentence = convertStringSentenceToCharArray(validExampleFromQuestion);
         assertFalse(sentenceManager.validateSentence(sentence,validExampleFromQuestion));
@@ -184,7 +179,6 @@ public class SentenceValidatorTest {
 
     @Test
     void validate_InvalidExampleThreeFromQuestion_ShouldReturnFalse(){
-        sentenceManager = new SentenceManager();
         String validExampleFromQuestion = "\"The quick brown fox said “hello Mr lazy dog.\"";
         char[] sentence = convertStringSentenceToCharArray(validExampleFromQuestion);
         assertFalse(sentenceManager.validateSentence(sentence,validExampleFromQuestion));
@@ -192,7 +186,6 @@ public class SentenceValidatorTest {
 
     @Test
     void validate_InvalidExampleFourThreeFromQuestion_ShouldReturnFalse(){
-        sentenceManager = new SentenceManager();
         String validExampleFromQuestion = "One lazy dog is too few, 12 is too many";
         char[] sentence = convertStringSentenceToCharArray(validExampleFromQuestion);
         assertFalse(sentenceManager.validateSentence(sentence,validExampleFromQuestion));
@@ -200,7 +193,6 @@ public class SentenceValidatorTest {
 
     @Test
     void validate_InvalidExampleFiveThreeFromQuestion_ShouldReturnFalse(){
-        sentenceManager = new SentenceManager();
         String validExampleFromQuestion = "Are there 11, 12, or 13 lazy dogs?";
         char[] sentence = convertStringSentenceToCharArray(validExampleFromQuestion);
         assertFalse(sentenceManager.validateSentence(sentence,validExampleFromQuestion));
@@ -208,7 +200,6 @@ public class SentenceValidatorTest {
 
     @Test
     void validate_InvalidExampleSixThreeFromQuestion_ShouldReturnFalse(){
-        sentenceManager = new SentenceManager();
         String validExampleFromQuestion = "There is no punctuation in this sentence";
         char[] sentence = convertStringSentenceToCharArray(validExampleFromQuestion);
         assertFalse(sentenceManager.validateSentence(sentence,validExampleFromQuestion));

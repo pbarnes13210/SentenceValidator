@@ -20,6 +20,4 @@ public class FileUtils {
             LOGGER.warn("Properties file not found");
         }
     }
-
-
 }

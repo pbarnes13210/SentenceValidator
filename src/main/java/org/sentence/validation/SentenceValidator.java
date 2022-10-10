@@ -122,6 +122,7 @@ public class SentenceValidator {
             return true;
         }
     }
+
     protected void logSentenceValidationError(String message, String errorValue, boolean errorLevel){
         String logMessage = SENTENCE_VALIDATION_ERROR + ", message= " + message + ", errorValue= " + errorValue;
 
